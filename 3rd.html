@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            console.log(1 +  "2" + "2");//output: 122   logic: 1 is considered as number, "2" is considered as string, "2" is also considered as string hence we concatinate all values.
+
+            console.log(1 +  +"2" + "2");// output: 32  logic: 1 is considered as number, +"2" is also considered as number hence we add 1+2=3, "2" is considered as string  hence we concat it to added ans.
+
+            console.log(1 +  -"1" + "2");//output:02    logic: 1 and -"1" are considered as numbers hence we subtract it because of - sign ans=0 ,"2" is considered as string hence we concat it to ans.
+
+            console.log(+"1" +  "1" + "2");//output:112  logic: +"1" is considered as number, "1" and "2" are considered as strings hence we concat all values
+
+            console.log( "A" - "B" + "2");//output:NaN2  logic: "A" and "B" are alphabets hence we get 'Not A Number(NaN)', 2 is concatinated as string
+
+            console.log( "A" - "B" + 2);//output:NaN     logic: "A" and "B" are alphabets hence we get 'Not A Number(NaN)', 2 is number but we cannot add to alphabets.
+
+        </script>
+    </head>
+</html>
